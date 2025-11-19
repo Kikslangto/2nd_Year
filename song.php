@@ -46,13 +46,14 @@ $and="And";
 $knowrepeats ="know";
 $berepeats = "be";
 $you ="you";
-
+#This part uses the count function to count all of the verbs, nouns and adjectives
 $numnouns = count($nouns);
 $numverbs = count($verbs);
 $numadj = count($adjective);
-
+#This part sums all of the counted verbs, adjective and nouns.
 $total = $numadj + $numnouns + $numverbs;
 $numberofwords = '248';
+#This part subtract the total number of nouns, adjective and verbs to the total number of words in the whole lyrics
 $exclu = $numberofwords - $total;
 
 $verse1 = "$and I'd $verbs[0] up $nouns[0] to $verbs[1] $you<br><br>
@@ -151,4 +152,5 @@ p {
         
     </body>
    
+
 </html>
